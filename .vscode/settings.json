@@ -4,6 +4,16 @@
     "editor.insertSpaces": true,
     // Configure glob patterns for excluding files and folders.
     "files.exclude": {
+        // exlude all folders in keyboards folder except for 'massdrop'
+        "**/keyboards/": false,
+        "**/keyboards/[^m]*": true,
+        "**/keyboards/?[^a]*": true,
+        "**/keyboards/??[^s]*": true,
+        "**/keyboards/???[^s]*": true,
+        "**/keyboards/????[^d]*": true,
+        "**/keyboards/?????[^r]*": true,
+        "**/keyboards/??????[^o]*": true,
+        "**/keyboards/???????[^p]*": true,
         "**/.build": true,
         "**/*.hex": true,
         "**/*.bin": true
